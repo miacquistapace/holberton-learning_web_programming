@@ -3,35 +3,59 @@
  <head>
    <title> Test </title>
    <style>
-   <div style="float:left;margin-right:5px;">
+   .flex-item {
+     padding: 5px;
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+
+     line-height: 100px;
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+     text-align: center;
    }
- </style>
+
+   .flex-container {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     border: 1px solid silver;
+     -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+   }
+
+   .wrap  {
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+
+     </style>
+
  </head>
 <body>
 <h1> <i> The Corgi </i> </h1>
   <p>
-     The <b> Corgi </b> is a <b> breed </b> of <b> dog </b> that has </br>
+     The <b> Corgi </b> is a <b> breed </b> of <b> dog </b> that has <br>
      been around for a long <b> time </b>
   </p>
-  <ul>
-    <li> <img src = "http://cdn.akc.org/corgi-4.jpg", alt="Corgi Image", height="400", width="600"> </li>
-    <li> <img src = "http://cdn.akc.org/corgi-5.jpg", alt = "Corgi Image 2", height="400", width="600" </li>
-    <li> <img src = "http://cdn.akc.org/corgi-6.jpg", alt = "Corgi Image 3", height="400", width="600" </li>
-  </ul>
+<ul class = "flex-container wrap">
+    <li class = "flexitem"> <img src = "http://cdn.akc.org/corgi-4.jpg", alt="Corgi Image", height="200", width="300"> </li>
+    <li class = "flexitem"> <img src = "http://cdn.akc.org/corgi-5.jpg", alt = "Corgi Image 2", height="200", width="300" </li>
+    <li class = "flexitem"> <img src = "http://cdn.akc.org/corgi-6.jpg", alt = "Corgi Image 3", height="200", width="300" </li>
+</ul>
 
 <h1> Popular Movies in 2017 </h1>
-<ul>
-  <div class="images">
-   <div style="float:left;margin-right:5px;">
-  <li> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Transformers:_The_Last_Knight"> <img src = "https://upload.wikimedia.org/wikipedia/en/2/26/Transformers_The_Last_Knight_poster.jpg", alt="Transformers">  </a> </li>
-</div>
-<div class="images">
-  <div style="float:left;margin-right:5px;">
-  <li> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)"> <img src = "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg", alt="Wonder Woman">  </a> </li>
-</div>
-<div class="images">
-  //<div style="float:left;margin-right:5px;">
-  <li> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Power_Rangers_(film)"> <img src = "https://upload.wikimedia.org/wikipedia/en/7/78/Power_Rangers_%282017_Official_Theatrical_Poster%29.png", alt="Wonder Woman">  </a> </li>
-</div>
+
+<ul class = "flex-container wrap">
+  <li class = "flexitem"> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Transformers:_The_Last_Knight"> <img src = "https://upload.wikimedia.org/wikipedia/en/2/26/Transformers_The_Last_Knight_poster.jpg", alt="Transformers" height="600" width="400">  </a> </li>
+  <li class = "flexitem"> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)"> <img src = "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg", alt="Wonder Woman" height="600" width="400">  </a> </li>
+  <li class = "flexitem"> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Power_Rangers_(film)"> <img src = "https://upload.wikimedia.org/wikipedia/en/7/78/Power_Rangers_%282017_Official_Theatrical_Poster%29.png", alt="Wonder Woman" height="600" width="400">  </a> </li>
 </ul>
 </body>
+</html>
