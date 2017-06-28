@@ -1,0 +1,12 @@
+1. Why do you think twitch is the most popular video game streaming service in the west, it's competitors (youtube etc)
+try to emulate a lot of twitch's business strategies but twitch still reigns supreme. Do you think because twitch popularized
+streaming first?
+
+2. Twitch doesn't have as high a market share in Asian countries (mainly China) with huya & douyu.tv being more popular there,
+do you know of any attempts to introduce twitch into China? Why do you think twitch does so well in the west but not in Asia?
+
+3.What programming languages is twitch (frontend and backend) mainly programmed in?
+
+4. What made twitch stand out to you as a company to work for?
+
+5. How would you describe your experience working at twitch?
