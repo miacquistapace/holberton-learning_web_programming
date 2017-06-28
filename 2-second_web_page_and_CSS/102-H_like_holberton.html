@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>H like Holberton</title>
+<style>
+   .flex-item {
+     padding: 5px;
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+
+     line-height: 100px;
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+     text-align: center;
+   }
+
+   .flex-container {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     border: 0;
+     -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+   }
+
+   .wrap  {
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+#h{
+  background-color: red;
+  height: 200px;
+  width: 50px;
+  position: absolute;
+}
+#mid{
+  background-color: red;
+  height: 40px;
+  width: 50px;
+  margin-top: 80px;
+  position: absolute;
+  z-index: 2;
+}
+#back{
+  background-color: gray;
+  height: 200px;
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+  <div style="position: relative;"
+  <ul class = "flex-container wrap">
+      <li class = "flexitem"> <div id="back"> </div></li>
+      <li class = "flexitem"> <div id="h" style="z-index: 1"> </div></li>
+      <li class = "flexitem"> <div id="mid"> </div></li>
+      <li class = "flexitem"> <div id="h"style="z-index: 3"> </div></li>
+  </ul>
+</div>
+</body>
+</html>
