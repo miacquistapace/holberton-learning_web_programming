@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 <style>
    .flex-item {
      padding: 5px;
@@ -33,15 +33,28 @@
  -webkit-flex-wrap: wrap;
  flex-wrap: wrap;
 }
-
+#corgi{
+  background-color: red;
+  height: 100px;
+  width: 150px;
+}
      </style>
-
-
- <head>
+<script>
+  function show(){
+  document.getElementById("corgiIMG").style.visibility = 'visible';
+  document.getElementById("corgishow").style.visibility = 'hidden';
+  document.getElementById("corgihide").style.visibility = 'visible';
+  }
+  function hide(){
+  document.getElementById("corgiIMG").style.visibility = 'hidden';
+  document.getElementById("corgihide").style.visibility = 'hidden';
+  document.getElementById("corgishow").style.visibility = 'visible';
+  }
+</script>
    <title> Test </title>
 
-
  </head>
+ <body>
 <a href="mysecondwebpage.html">Go to my second web page</a>
   <h1> <i> The Corgi </i> </h1>
     <p>
@@ -63,5 +76,11 @@
     <li class = "flexitem"> <a target = "blank_" href = "https://en.wikipedia.org/wiki/Power_Rangers_(film)"> <img src = "https://upload.wikimedia.org/wikipedia/en/7/78/Power_Rangers_%282017_Official_Theatrical_Poster%29.png", alt="Wonder Woman" height="600" width="400">  </a> </li>
   </ul>
 
+<div style="position: relative; margin-left:10px;">
+<button id="corgishow" onclick="show()">Click me to add a Corgi!</button>
+<img id = "corgiIMG" style="visibility:hidden" src = "http://cdn.akc.org/corgi-7.jpg" height="100", width="150"> </li>
+
+<button id="corgihide" style="visibility: hidden"onclick="hide()">Click me to remove the Corgi!</button>
+</div>
 </body>
 </html>
