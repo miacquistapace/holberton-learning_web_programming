@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var firstNum;
+    var secndNum;
+  function func(){
+    firstNum = document.getElementById('num1').value;
+    secndNum =document.getElementById('num2').value;
+  }
+  function div(){
+    func();
+    document.getElementById("answer").innerHTML=(firstNum/secndNum);
+  }
+  function mult(){
+    func();
+    document.getElementById("answer").innerHTML=(firstNum*secndNum);
+  }
+</script>
+</head>
+<body>
+1st Number :
+<input type="text" placeholder="Please type a number" id="num1"></input> <br>
+2nd Number :
+<input type="text" placeholder="Please type a number" id="num2"></input>
+<div style="position:relative;margin-left:10px">
+<button onclick="mult() " id="mult">Multiply</button><button onclick="div() " id="div">Divide</button>
+</div>
+The Result Is: <br>
+<div id="answer"></div>
+</body>
+</html>
