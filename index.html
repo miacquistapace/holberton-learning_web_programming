@@ -39,6 +39,7 @@
   width: 150px;
 }
      </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
   function show(){
   document.getElementById("corgiIMG").style.visibility = 'visible';
@@ -49,6 +50,10 @@
   document.getElementById("corgiIMG").style.visibility = 'hidden';
   document.getElementById("corgihide").style.visibility = 'hidden';
   document.getElementById("corgishow").style.visibility = 'visible';
+  }
+
+  function addName(){
+    $( ".name" ).append( "<h3>Michael A</h3>" )
   }
 </script>
    <title> Test </title>
@@ -78,9 +83,11 @@
 
 <div style="position: relative; margin-left:10px;">
 <button id="corgishow" onclick="show()">Click me to add a Corgi!</button>
-<img id = "corgiIMG" style="visibility:hidden" src = "http://cdn.akc.org/corgi-7.jpg" height="100", width="150"> </li>
+<img id = "corgiIMG" style="visibility:hidden" src = "http://cdn.akc.org/corgi-7.jpg" height="100", width="150">
 
 <button id="corgihide" style="visibility: hidden"onclick="hide()">Click me to remove the Corgi!</button>
 </div>
+<div class="name"><div>
+<button type="button" name="button" onclick="addName()">Add my Name to the Page!</button>
 </body>
 </html>
